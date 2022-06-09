@@ -19,8 +19,8 @@ const Skills = () => {
 
     return (
 
-        <div className=''>
-            <h2 className='text-5xl text-center my-5'>My Skills</h2>
+        <div className='py-10'>
+            <h2 className='text-5xl text-center font-bold mb-5'>My Skills</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 px-12'>
                 {skills.map(skill => (
                     <ProgressBar key={skill.id} skill={skill} />

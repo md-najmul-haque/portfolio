@@ -28,7 +28,7 @@ const Contact = () => {
     return (
 
         <div id='contact'>
-            <h2 className="text-5xl text-primary text-semibold text-center font-bold">Get in Touch</h2>
+            <h2 className="text-5xl text-center font-bold">Get in Touch</h2>
 
             <div className="flex items-center min-h-fit" >
                 <div class="flex-1 card w-96 text-primary-content">
@@ -126,7 +126,7 @@ const Contact = () => {
                             </label>
                         </div>
 
-                        <button type="submit" className="btn max-w-xs btn-primary  bg-gradient-to-r from-secondary to-primary  text-white">Submit</button>
+                        <button type="submit" className="btn max-w-xs btn-primary">Submit</button>
 
                     </form>
 
