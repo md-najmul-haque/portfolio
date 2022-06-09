@@ -1,6 +1,9 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faLocationDot, faSquarePhone } from '@fortawesome/free-solid-svg-icons'
+import { toast } from 'react-toastify';
 
 
 const Contact = () => {
@@ -10,7 +13,13 @@ const Contact = () => {
     const onSubmit = (data, e) => {
 
         emailjs.sendForm('service_t2yjpt7', 'template_m6usr6m', e.target, '05q1Ckj6xqf-KKHgb')
-            .then(res => console.log(res))
+            .then(res => {
+                if (res.status === 200) {
+                    toast.success('Thanks for your message. Will connect you soon.')
+                } else {
+                    toast.error('Sorry! Your message is not sent successfully. Please try again.')
+                }
+            })
             .catch(err => console.log(err))
         reset();
 
@@ -18,81 +27,112 @@ const Contact = () => {
 
     return (
 
-        <div className="hero contact-section min-h-fit pt-20 pb-40" >
+        <div id='contact'>
+            <h2 className="text-5xl text-primary text-semibold text-center font-bold">Get in Touch</h2>
 
-            <div class="card w-96 bg-primary text-primary-content">
-                <div class="card-body">
-                    <div>
-                        <div>
-
+            <div className="flex items-center min-h-fit" >
+                <div class="flex-1 card w-96 text-primary-content">
+                    <div class="card-body">
+                        <div className='flex items-center bg-primary p-5 rounded-xl '>
+                            <div className='text-5xl mr-3'>
+                                <FontAwesomeIcon icon={faSquarePhone} />
+                            </div>
+                            <div>
+                                <h2 class="card-title text-2xl">Phone</h2>
+                                <p class="font-semibold text-xl" >+8801717888789</p>
+                            </div>
                         </div>
-                        <div>
-                            <h2 class="card-title">Phone</h2>
-                            <p>+8801717888789</p>
+
+                        <div className='flex items-center bg-info p-5 rounded-xl '>
+                            <div className='text-5xl mr-3'>
+                                <FontAwesomeIcon icon={faEnvelope} />
+                            </div>
+                            <div>
+                                <h2 class="card-title text-2xl">Email</h2>
+                                <p class="font-semibold text-xl" >najmulhaque008@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div className='flex items-center bg-accent p-5 rounded-xl'>
+                            <div className='text-5xl mr-3'>
+                                <FontAwesomeIcon icon={faLocationDot} />
+                            </div>
+                            <div>
+                                <h2 class="card-title text-2xl">Location</h2>
+                                <p class="font-semibold text-xl" >Dhaka, Bangladesh</p>
+                            </div>
                         </div>
                     </div>
 
                 </div>
+
+                <div className="flex-1 card-body w-96">
+                    <form className='gap-1' onSubmit={handleSubmit(onSubmit)}>
+
+                        <div className='flex flex-col lg:flex-row'>
+                            <div className='flex-1 '>
+                                <input
+                                    type="text"
+                                    placeholder="Enter Your Name"
+                                    className="input input-bordered w-full max-w-xs"
+                                    {...register("name")} />
+                            </div>
+
+                            <div className='flex-1 ml-0'>
+                                <input
+                                    type="text"
+                                    placeholder="Enter Your Email"
+                                    className="input input-bordered w-full max-w-xs"
+                                    {...register("email", {
+                                        required: {
+                                            value: true,
+                                            message: 'Email is required'
+                                        },
+                                        pattern: {
+                                            value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+                                            message: 'Please provide valid email address'
+                                        }
+                                    })} />
+
+                                <label class="label label-text-alt">
+                                    {errors.email?.type === 'required' && <span className='text-red-600'>{errors.email.message}</span>}
+                                    {errors.email?.type === 'pattern' && <span className='text-red-600'>{errors.email.message}</span>}
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <input
+                                type="text"
+                                placeholder="Please white subject here"
+                                className="input input-bordered w-full max-w-xs lg:max-w-2xl  mb-2"
+                                {...register("subject")} />
+                        </div>
+
+                        <div>
+                            <input
+                                type="textarea"
+                                placeholder="Leave Your message here"
+                                className="input input-bordered w-full h-36 max-w-xs lg:max-w-2xl my-3"
+                                {...register("message", {
+                                    required: {
+                                        value: true,
+                                        message: 'Please write your messages'
+                                    }
+                                })} />
+
+                            <label class="label label-text-alt">
+                                {errors.message?.type === 'required' && <span className='text-red-600'>{errors.message.message}</span>}
+                            </label>
+                        </div>
+
+                        <button type="submit" className="btn max-w-xs btn-primary  bg-gradient-to-r from-secondary to-primary  text-white">Submit</button>
+
+                    </form>
+
+                </div>
+
             </div>
-
-            <div className="card-body w-96">
-                <h2 className="text-3xl text-primary font-bold">Get in Touch</h2>
-
-                <form className='gap-1' onSubmit={handleSubmit(onSubmit)}>
-
-                    <input
-                        type="text"
-                        placeholder="Enter Your Name"
-                        className="input input-bordered w-full max-w-xs md:mr-7 mb-2"
-                        {...register("name")} />
-
-                    <input
-                        type="text"
-                        placeholder="Enter Your Email"
-                        className="input input-bordered w-full max-w-xs mb-2"
-                        {...register("email", {
-                            required: {
-                                value: true,
-                                message: 'Email is required'
-                            },
-                            pattern: {
-                                value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                                message: 'Please provide valid email address'
-                            }
-                        })} />
-
-                    <label class="label label-text-alt">
-                        {errors.email?.type === 'required' && <span className='text-red-600'>{errors.email.message}</span>}
-                        {errors.email?.type === 'pattern' && <span className='text-red-600'>{errors.email.message}</span>}
-                    </label>
-
-                    <input
-                        type="text"
-                        placeholder="Please white subject here"
-                        className="input input-bordered w-full max-w-xs mb-2"
-                        {...register("subject")} />
-
-                    <input
-                        type="textarea"
-                        placeholder="Leave Your message here"
-                        className="input input-bordered w-full h-36 max-w-xs lg:max-w-2xl my-3"
-                        {...register("message", {
-                            required: {
-                                value: true,
-                                message: 'Please write your messages'
-                            }
-                        })} />
-
-                    <label class="label label-text-alt">
-                        {errors.message?.type === 'required' && <span className='text-red-600'>{errors.message.message}</span>}
-                    </label>
-
-                    <button type="submit" className="btn max-w-xs btn-primary  bg-gradient-to-r from-secondary to-primary  text-white">Submit</button>
-
-                </form>
-
-            </div>
-
         </div>
 
 
