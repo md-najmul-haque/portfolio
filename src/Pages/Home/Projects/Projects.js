@@ -12,7 +12,7 @@ const Projects = () => {
         { id: 3, img: ZenithEstates, title: 'Zenith estates', description: 'Developed firebase login system here. Also, add Facebook and Google login system. Designed to sell apartments. ' }
     ]
     return (
-        <div>
+        <div id='projects'>
             <h1 className='text-5xl text-center font-bold my-5'>My Recent <span>Projects</span></h1>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>

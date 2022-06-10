@@ -4,7 +4,7 @@ import coding from '../../../assets/banner/coding.png'
 
 const About = () => {
     return (
-        <div>
+        <div id='about'>
             <h1 className='text-5xl text-center font-bold'>About Me</h1>
             <div class="hero min-h-screen">
                 <div class="hero-content flex-col lg:flex-row">
