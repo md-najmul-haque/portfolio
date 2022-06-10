@@ -70,61 +70,54 @@ const Contact = () => {
                     <form className='gap-1' onSubmit={handleSubmit(onSubmit)}>
 
                         <div className='flex flex-col lg:flex-row'>
-                            <div className='flex-1 '>
-                                <input
-                                    type="text"
-                                    placeholder="Enter Your Name"
-                                    className="input input-bordered w-full max-w-xs"
-                                    {...register("name")} />
-                            </div>
 
-                            <div className='flex-1 ml-0'>
-                                <input
-                                    type="text"
-                                    placeholder="Enter Your Email"
-                                    className="input input-bordered w-full max-w-xs"
-                                    {...register("email", {
-                                        required: {
-                                            value: true,
-                                            message: 'Email is required'
-                                        },
-                                        pattern: {
-                                            value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                                            message: 'Please provide valid email address'
-                                        }
-                                    })} />
-
-                                <label class="label label-text-alt">
-                                    {errors.email?.type === 'required' && <span className='text-red-600'>{errors.email.message}</span>}
-                                    {errors.email?.type === 'pattern' && <span className='text-red-600'>{errors.email.message}</span>}
-                                </label>
-                            </div>
-                        </div>
-
-                        <div>
                             <input
                                 type="text"
-                                placeholder="Please white subject here"
-                                className="input input-bordered w-full max-w-xs lg:max-w-2xl  mb-2"
-                                {...register("subject")} />
-                        </div>
+                                placeholder="Enter Your Name"
+                                className="input input-bordered w-full max-w-xs"
+                                {...register("name")} />
 
-                        <div>
+
                             <input
-                                type="textarea"
-                                placeholder="Leave Your message here"
-                                className="input input-bordered w-full h-36 max-w-xs lg:max-w-2xl my-3"
-                                {...register("message", {
+                                type="text"
+                                placeholder="Enter Your Email"
+                                className="input input-bordered w-full lg:ml-7 mb-3 max-w-xs"
+                                {...register("email", {
                                     required: {
                                         value: true,
-                                        message: 'Please write your messages'
+                                        message: 'Email is required'
+                                    },
+                                    pattern: {
+                                        value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+                                        message: 'Please provide valid email address'
                                     }
                                 })} />
 
-                            <label class="label label-text-alt">
-                                {errors.message?.type === 'required' && <span className='text-red-600'>{errors.message.message}</span>}
-                            </label>
+
                         </div>
+
+                        <input
+                            type="text"
+                            placeholder="Please white subject here"
+                            className="input input-bordered w-full max-w-xs lg:max-w-2xl  mb-2"
+                            {...register("subject")} />
+
+
+                        <input
+                            type="textarea"
+                            placeholder="Leave Your message here"
+                            className="input input-bordered w-full h-36 max-w-xs lg:max-w-2xl my-3"
+                            {...register("message", {
+                                required: {
+                                    value: true,
+                                    message: 'Please write your messages'
+                                }
+                            })} />
+
+                        <label class="label label-text-alt">
+                            {errors.message?.type === 'required' && <span className='text-red-600'>{errors.message.message}</span>}
+                        </label>
+
 
                         <button type="submit" className="btn max-w-xs btn-primary">Submit</button>
 

@@ -12,7 +12,7 @@ const ProjectDetails = () => {
             .then(data => setProject(data))
     }, [])
 
-    const { _id, img, name, description, liveLink } = project
+    const { _id, name, img, screenshot1, screenshot2, screenshot3, screenshot4, screenshot5, screenshot6, clientRepo, serverRepo, liveLink, feature1, feature2, feature3, feature4, feature5, feature6 } = project
 
     return (
         <div className=''>
@@ -24,12 +24,19 @@ const ProjectDetails = () => {
                     <img src={img} alt="Shoes" />
                 </figure>
                 <div class="card-body items-center text-center">
-                    <h2 class="card-title">{name}</h2>
-                    <p>{description}</p>
+                    <h2 class="card-title text-3xl">{name}</h2>
+                    <ul className='text-left list-disc p-7'>
+                        <li>{feature1}</li>
+                        <li>{feature2}</li>
+                        <li>{feature3}</li>
+                        <li>{feature4}</li>
+                        <li>{feature5}</li>
+                        <li>{feature6}</li>
+                    </ul>
 
                     <div className='flex flex-col md:flex-row gap-3 mt-5'>
-                        <a class="btn btn-primary" href={liveLink} rel="noreferrer" role='button' target='_blank'>GitHub Client Side Code</a>
-                        <a class="btn btn-primary ml-3" href={liveLink} rel="noreferrer" role='button' target='_blank'>GitHub Client Side Code</a>
+                        <a class="btn btn-primary" href={clientRepo} rel="noreferrer" role='button' target='_blank'>GitHub Client Side Code</a>
+                        <a class="btn btn-primary ml-3" href={serverRepo} rel="noreferrer" role='button' target='_blank'>GitHub Client Side Code</a>
                         <a class="btn btn-primary ml-3" href={liveLink} rel="noreferrer" role='button' target='_blank'>Live Site</a>
                     </div>
 
