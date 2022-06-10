@@ -1,14 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import resumeOfNajmul from '../../../assets/resume/resumeOfNajmul.pdf'
 
 
 const Navbar = () => {
 
     const menuItem = <>
-        <li><a as={Link} href='#home'>Home</a ></li>
-        <li><a as={Link} href='#about'>About</a ></li>
-        <li><a as={Link} href='#projects'>Projects</a ></li>
-        <li><a as={Link} href='#contact'>Contact</a ></li>
+
+        <li><HashLink to="/">Home</HashLink></li>
+        <li><HashLink to="/home#about">About</HashLink></li>
+        <li><HashLink to="/home#projects">Projects</HashLink></li>
+        <li><HashLink to="/blogs">Blogs</HashLink></li>
+        <li><HashLink to="/home#contact">Contact</HashLink></li>
+        <a class="btn btn-primary ml-3" href={resumeOfNajmul} download role='button'>Download Resume</a>
 
     </>
 
