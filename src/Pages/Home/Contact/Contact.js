@@ -30,26 +30,26 @@ const Contact = () => {
         <div id='contact'>
             <h2 className="text-5xl text-center font-bold"><span className='text-white'>Get in</span> <span className='text-red-700'>Touch</span></h2>
 
-            <div className="flex flex-col lg:flex-row items-center min-h-fit text-white" >
-                <div class="flex-1 card w-96 text-primary-content">
-                    <div class="card-body">
+            <div className="flex flex-col lg:flex-row jus items-center min-h-fit text-white" >
+                <div className="flex-1 card w-96 text-primary-content">
+                    <div className="card-body pt-0">
                         <div className='flex items-center bg-primary p-5 rounded-xl '>
                             <div className='text-5xl mr-3'>
                                 <FontAwesomeIcon icon={faSquarePhone} />
                             </div>
                             <div>
-                                <h2 class="card-title text-2xl">Phone</h2>
-                                <p class="font-bold" >+8801717888789</p>
+                                <h2 className="card-title text-2xl">Phone</h2>
+                                <p className="font-bold" >+8801717888789</p>
                             </div>
                         </div>
 
-                        <div className='flex items-center bg-info p-5 rounded-xl '>
+                        <div className='flex items-center bg-info p-5 my-2 rounded-xl '>
                             <div className='text-5xl mr-3'>
                                 <FontAwesomeIcon icon={faEnvelope} />
                             </div>
                             <div>
-                                <h2 class="card-title text-2xl">Email</h2>
-                                <p class="font-bold" >najmulhaque008@gmail.com</p>
+                                <h2 className="card-title text-2xl">Email</h2>
+                                <p className="font-bold" >najmulhaque008@gmail.com</p>
                             </div>
                         </div>
 
@@ -58,8 +58,8 @@ const Contact = () => {
                                 <FontAwesomeIcon icon={faLocationDot} />
                             </div>
                             <div>
-                                <h2 class="card-title text-2xl">Location</h2>
-                                <p class="font-bold" >Dhaka, Bangladesh</p>
+                                <h2 className="card-title text-2xl">Location</h2>
+                                <p className="font-bold" >Dhaka, Bangladesh</p>
                             </div>
                         </div>
                     </div>
@@ -114,12 +114,15 @@ const Contact = () => {
                                 }
                             })} />
 
-                        <label class="label label-text-alt">
+                        <label className="label label-text-alt">
                             {errors.message?.type === 'required' && <span className='text-red-600'>{errors.message.message}</span>}
                         </label>
 
 
-                        <button type="submit" className="btn max-w-xs btn-primary">Submit</button>
+                        <div className='flex justify-center'>
+                            <button type="submit" className="btn max-w-xs btn-primary">Send Mail</button>
+                        </div>
+
 
                     </form>
 

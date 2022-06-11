@@ -38,7 +38,7 @@ const ProjectDetails = (props) => {
 
             <h1 className='text-2xl md:text-5xl text-center text-white font-semibold my-5'>{name} Projects Details</h1>
 
-            <div class="card w-full md:w-7/12 bg-base-100 shadow-2xl mx-auto">
+            <div className="card w-full md:w-7/12 bg-base-100 shadow-2xl mx-auto">
                 <Carousel
                     swipeable={false}
                     draggable={false}
@@ -51,24 +51,24 @@ const ProjectDetails = (props) => {
                     keyBoardControl={true}
                     customTransition="all .5"
                     transitionDuration={500}
-                    containerClass="carousel-container"
+                    containerclass="carousel-container"
                     removeArrowOnDeviceType={["tablet", "mobile"]}
                     deviceType={props.deviceType}
-                    dotListClass="custom-dot-list-style"
-                    itemClass="carousel-item-padding-40-px"
+                    dotListclass="custom-dot-list-style"
+                    itemclass="carousel-item-padding-40-px"
                 >
-                    <div class="px-10 pt-10"><img src={screenshot1} alt="Shoes" /></div>
-                    <div class="px-10 pt-10"><img src={screenshot2} alt="Shoes" /></div>
-                    <div class="px-10 pt-10"><img src={screenshot3} alt="Shoes" /></div>
-                    <div class="px-10 pt-10"><img src={screenshot4} alt="Shoes" /></div>
-                    <div class="px-10 pt-10"><img src={screenshot5} alt="Shoes" /></div>
-                    <div class="px-10 pt-10"><img src={screenshot5} alt="Shoes" /></div>
-                    <div class="px-10 pt-10"><img src={screenshot6} alt="Shoes" /></div>
+                    <div className="px-10 pt-10"><img src={screenshot1} alt="Shoes" /></div>
+                    <div className="px-10 pt-10"><img src={screenshot2} alt="Shoes" /></div>
+                    <div className="px-10 pt-10"><img src={screenshot3} alt="Shoes" /></div>
+                    <div className="px-10 pt-10"><img src={screenshot4} alt="Shoes" /></div>
+                    <div className="px-10 pt-10"><img src={screenshot5} alt="Shoes" /></div>
+                    <div className="px-10 pt-10"><img src={screenshot5} alt="Shoes" /></div>
+                    <div className="px-10 pt-10"><img src={screenshot6} alt="Shoes" /></div>
 
                 </Carousel>
 
-                <div class="card-body items-center text-center">
-                    <h2 class="card-title text-4xl">{name}</h2>
+                <div className="card-body items-center text-center">
+                    <h2 className="card-title text-4xl">{name}</h2>
 
                     <p className='text-left text-2xl font-semibold'>Key Feature:</p>
                     <ul className='text-left list-disc px-7 pb-5'>
@@ -81,9 +81,9 @@ const ProjectDetails = (props) => {
                     </ul>
 
                     <div className='flex flex-col md:flex-row gap-3 mt-5'>
-                        <a class="btn btn-primary" href={clientRepo} rel="noreferrer" role='button' target='_blank'>GitHub Client Side Code</a>
-                        <a class="btn btn-primary ml-3" href={serverRepo} rel="noreferrer" role='button' target='_blank'>GitHub Client Side Code</a>
-                        <a class="btn btn-primary ml-3" href={liveLink} rel="noreferrer" role='button' target='_blank'>Live Site</a>
+                        <a className="btn btn-primary" href={clientRepo} rel="noreferrer" role='button' target='_blank'>GitHub Client Side Code</a>
+                        <a className="btn btn-primary ml-3" href={serverRepo} rel="noreferrer" role='button' target='_blank'>GitHub Client Side Code</a>
+                        <a className="btn btn-primary ml-3" href={liveLink} rel="noreferrer" role='button' target='_blank'>Live Site</a>
                     </div>
 
                 </div>
