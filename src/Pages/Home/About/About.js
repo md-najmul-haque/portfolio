@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import coding from '../../../assets/banner/coding.png'
+import coding1 from '../../../assets/banner/coding1.png'
 
 const About = () => {
     return (
@@ -9,7 +8,7 @@ const About = () => {
             <div className="hero min-h-fit text-white">
                 <div className="hero-content flex-col lg:flex-row my-20">
                     <div data-aos="fade-right" data-aos-duration="1500" className='flex-1'>
-                        <img src={coding} alt='' />
+                        <img src={coding1} alt='' />
                     </div>
                     <div data-aos="fade-left" data-aos-duration="1500" className='flex-1'>
                         <p className='text-justify'>Hello! I'm Najmul, a programmer. I have developed various projects using React.js, Node.js, Express.js, MongoDB, etc. I love coding and my dream is to be a world-class programmer and want to build a dynamic career in this sector. I'm interested in MERN (MongoDB, ExpressJS, ReactJS, NodeJS) stack web development.</p>

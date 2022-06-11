@@ -3,15 +3,16 @@ import coding from '../../../assets/banner/coding.png'
 import resumeOfNajmul from '../../../assets/resume/resumeOfNajmul.pdf'
 import Typewriter from 'typewriter-effect';
 
+
 const Banner = () => {
     return (
         <div data-aos="fade-up" data-aos-duration="1500" className="hero min-h-screen text-white">
             <div className="hero-content flex-col lg:flex-row-reverse">
-                <div className='flex-1'>
+                <div className='flex-1 w-full'>
                     <img src={coding} alt='' />
                 </div>
 
-                <div className='flex-1'>
+                <div className='flex-1 w-full'>
                     <h3 className="text-2xl font-semibold">Hi, I am</h3>
                     <h1 className="text-5xl font-bold my-5">Md Najmul Haque</h1>
                     <h2 className="text-4xl font-bold my-5">
