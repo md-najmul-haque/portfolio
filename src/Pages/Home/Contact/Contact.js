@@ -30,7 +30,7 @@ const Contact = () => {
         <div id='contact'>
             <h2 className="text-5xl text-center font-bold"><span className='text-white'>Get in</span> <span className='text-red-700'>Touch</span></h2>
 
-            <div className="flex items-center min-h-fit text-white" >
+            <div className="flex flex-col lg:flex-row items-center min-h-fit text-white" >
                 <div class="flex-1 card w-96 text-primary-content">
                     <div class="card-body">
                         <div className='flex items-center bg-primary p-5 rounded-xl '>
@@ -74,7 +74,7 @@ const Contact = () => {
                             <input
                                 type="text"
                                 placeholder="Enter Your Name"
-                                className="input input-bordered w-full max-w-xs"
+                                className="input input-bordered w-full max-w-xs mb-3"
                                 {...register("name")} />
 
 

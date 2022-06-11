@@ -4,9 +4,9 @@ import coding from '../../../assets/banner/coding.png'
 
 const About = () => {
     return (
-        <div className='text-white' id='about'>
-            <h1 className='text-5xl text-center font-bold '>About Me</h1>
-            <div class="hero min-h-fit">
+        <div id='about'>
+            <h1 className='text-5xl text-center font-bold '><span className='text-white'>About</span><span className='text-red-700'> Me</span></h1>
+            <div class="hero min-h-fit text-white">
                 <div class="hero-content flex-col lg:flex-row my-20">
                     <div className='flex-1'>
                         <img src={coding} alt='' />

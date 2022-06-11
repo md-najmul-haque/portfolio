@@ -13,9 +13,9 @@ const Projects = () => {
 
     return (
         <div id='projects'>
-            <h1 className='text-5xl text-center text-white font-bold mb-10 mt-5'>My Recent <span>Projects</span></h1>
+            <h1 className='text-5xl text-center  font-bold mb-10 mt-5'> <span className='text-white'>My recent</span> <span className='text-red-700'>Projects</span></h1>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
                     projects.map(project => <Project key={project._id} project={project}></Project>)
                 }
