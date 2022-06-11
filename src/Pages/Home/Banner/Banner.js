@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 
 const Banner = () => {
     return (
-        <div class="hero min-h-screen">
+        <div class="hero min-h-screen text-white">
             <div class="hero-content flex-col lg:flex-row-reverse">
                 <div className='flex-1'>
                     <img src={coding} alt='' />

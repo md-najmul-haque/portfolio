@@ -6,7 +6,7 @@ const ProgressBar = ({ skill }) => {
     const { bgcolor, completed, title } = skill
 
     const containerStyles = {
-        height: 15,
+        height: 12,
         width: '100%',
         backgroundColor: "#e0e0de",
         borderRadius: 5,
@@ -28,7 +28,7 @@ const ProgressBar = ({ skill }) => {
 
     return (
         <div>
-            <h2>{title}</h2>
+            <h2 className='mb-1'>{title}</h2>
             <div style={containerStyles}>
                 <div className='progress-bar flex items-center justify-end' style={fillerStyles}>
                     <span style={labelStyles}>{`${completed}%`}</span>

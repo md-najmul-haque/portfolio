@@ -28,9 +28,9 @@ const Contact = () => {
     return (
 
         <div id='contact'>
-            <h2 className="text-5xl text-center font-bold">Get in Touch</h2>
+            <h2 className="text-5xl text-center font-bold"><span className='text-white'>Get in</span> <span className='text-red-700'>Touch</span></h2>
 
-            <div className="flex items-center min-h-fit" >
+            <div className="flex items-center min-h-fit text-white" >
                 <div class="flex-1 card w-96 text-primary-content">
                     <div class="card-body">
                         <div className='flex items-center bg-primary p-5 rounded-xl '>
