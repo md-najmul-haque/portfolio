@@ -36,7 +36,7 @@ const ProjectDetails = (props) => {
     return (
         <div className=''>
 
-            <h1 className='text-2xl md:text-5xl text-center font-semibold my-5'>{name} Projects Details</h1>
+            <h1 className='text-2xl md:text-5xl text-center text-white font-semibold my-5'>{name} Projects Details</h1>
 
             <div class="card w-full md:w-7/12 bg-base-100 shadow-2xl mx-auto">
                 <Carousel
@@ -68,8 +68,10 @@ const ProjectDetails = (props) => {
                 </Carousel>
 
                 <div class="card-body items-center text-center">
-                    <h2 class="card-title text-3xl">{name}</h2>
-                    <ul className='text-left list-disc p-7'>
+                    <h2 class="card-title text-4xl">{name}</h2>
+
+                    <p className='text-left text-2xl font-semibold'>Key Feature:</p>
+                    <ul className='text-left list-disc px-7 pb-5'>
                         <li>{feature1}</li>
                         <li>{feature2}</li>
                         <li>{feature3}</li>
