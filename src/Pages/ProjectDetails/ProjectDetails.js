@@ -57,15 +57,13 @@ const ProjectDetails = (props) => {
                     dotListClass="custom-dot-list-style"
                     itemClass="carousel-item-padding-40-px"
                 >
-
-                    <div><img src={screenshot1} alt="Shoes" /></div>
-                    <div><img src={screenshot2} alt="Shoes" /></div>
-                    <div><img src={screenshot3} alt="Shoes" /></div>
-                    <div><img src={screenshot4} alt="Shoes" /></div>
-                    <div><img src={screenshot5} alt="Shoes" /></div>
-                    <div><img src={screenshot5} alt="Shoes" /></div>
-                    <div><img src={screenshot6} alt="Shoes" /></div>
-
+                    <div class="px-10 pt-10"><img src={screenshot1} alt="Shoes" /></div>
+                    <div class="px-10 pt-10"><img src={screenshot2} alt="Shoes" /></div>
+                    <div class="px-10 pt-10"><img src={screenshot3} alt="Shoes" /></div>
+                    <div class="px-10 pt-10"><img src={screenshot4} alt="Shoes" /></div>
+                    <div class="px-10 pt-10"><img src={screenshot5} alt="Shoes" /></div>
+                    <div class="px-10 pt-10"><img src={screenshot5} alt="Shoes" /></div>
+                    <div class="px-10 pt-10"><img src={screenshot6} alt="Shoes" /></div>
 
                 </Carousel>
 

@@ -13,12 +13,12 @@ const Navbar = () => {
         <li><HashLink to="/home#projects">Projects</HashLink></li>
         <li><HashLink to="/blogs">Blogs</HashLink></li>
         <li><HashLink to="/home#contact">Contact</HashLink></li>
-        <a class="btn btn-primary ml-3" href={resumeOfNajmul} download role='button'>Download Resume</a>
+        <a class="btn btn-primary text-white ml-3" href={resumeOfNajmul} download role='button'>Download Resume</a>
 
     </>
 
     return (
-        <div class="navbar sticky top-0 z-10 bg-white">
+        <div class="navbar sticky top-0 z-10 bg-secondary text-white">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
