@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Project = ({ project }) => {
     const { _id, img, name, description, liveLink } = project
     return (
-        <div className="card w-96 bg-base-100 shadow-xl mx-auto">
+        <div data-aos="zoom-in-up" data-aos-duration="1500" className="card w-96 bg-base-100 shadow-xl mx-auto">
             <figure className="px-10 pt-10">
                 <img src={img} alt="Shoes" />
             </figure>

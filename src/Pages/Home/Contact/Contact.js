@@ -31,7 +31,7 @@ const Contact = () => {
             <h2 className="text-5xl text-center font-bold"><span className='text-white'>Get in</span> <span className='text-red-700'>Touch</span></h2>
 
             <div className="flex flex-col lg:flex-row jus items-center min-h-fit text-white" >
-                <div className="flex-1 card w-96 text-primary-content">
+                <div data-aos="zoom-in-right" data-aos-duration="1500" className="flex-1 card w-96 text-primary-content">
                     <div className="card-body pt-0">
                         <div className='flex items-center bg-primary p-5 rounded-xl '>
                             <div className='text-5xl mr-3'>
@@ -66,7 +66,7 @@ const Contact = () => {
 
                 </div>
 
-                <div className="flex-1 card-body w-96">
+                <div data-aos="zoom-in-left" data-aos-duration="1500" className="flex-1 card-body w-96">
                     <form className='gap-1' onSubmit={handleSubmit(onSubmit)}>
 
                         <div className='flex flex-col lg:flex-row'>
