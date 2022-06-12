@@ -10,7 +10,7 @@ const ProgressBar = ({ skill }) => {
         width: '100%',
         backgroundColor: "#e0e0de",
         borderRadius: 2,
-        marginBottom: 20
+        marginBottom: 10
     }
 
     const fillerStyles = {
