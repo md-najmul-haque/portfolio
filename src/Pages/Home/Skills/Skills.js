@@ -22,7 +22,7 @@ const Skills = () => {
 
     return (
 
-        <div className='py-10 mt-7'>
+        <div className='py-10 mt-12'>
             <h2 className='text-4xl lg:text-5xl text-center font-bold'><span className='text-white'>My</span> <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent'>Skills</span></h2>
             <div data-aos="fade-up" data-aos-duration="1500" className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 p-12 text-white'>
                 {skills.map(skill => (

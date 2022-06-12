@@ -13,7 +13,7 @@ const Projects = () => {
 
     return (
         <div id='projects'>
-            <h1 className='text-4xl lg:text-5xl text-center  font-bold mb-10 mt-10'> <span className='text-white'>My recent</span> <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent'>Projects</span></h1>
+            <h1 className='text-4xl lg:text-5xl text-center  font-bold mb-12 mt-10'> <span className='text-white'>My recent</span> <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent'>Projects</span></h1>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
