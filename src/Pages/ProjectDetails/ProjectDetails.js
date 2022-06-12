@@ -57,27 +57,27 @@ const ProjectDetails = (props) => {
                     dotListclass="custom-dot-list-style"
                     itemclass="carousel-item-padding-40-px"
                 >
-                    <div className="px-10 pt-10"><img src={screenshot1} alt="Shoes" /></div>
-                    <div className="px-10 pt-10"><img src={screenshot2} alt="Shoes" /></div>
-                    <div className="px-10 pt-10"><img src={screenshot3} alt="Shoes" /></div>
-                    <div className="px-10 pt-10"><img src={screenshot4} alt="Shoes" /></div>
-                    <div className="px-10 pt-10"><img src={screenshot5} alt="Shoes" /></div>
-                    <div className="px-10 pt-10"><img src={screenshot5} alt="Shoes" /></div>
-                    <div className="px-10 pt-10"><img src={screenshot6} alt="Shoes" /></div>
+                    <div className="px-10 pt-10"><img src={screenshot1} alt="screenshot" /></div>
+                    <div className="px-10 pt-10"><img src={screenshot2} alt="screenshot" /></div>
+                    <div className="px-10 pt-10"><img src={screenshot3} alt="screenshot" /></div>
+                    <div className="px-10 pt-10"><img src={screenshot4} alt="screenshot" /></div>
+                    <div className="px-10 pt-10"><img src={screenshot5} alt="screenshot" /></div>
+                    <div className="px-10 pt-10"><img src={screenshot5} alt="screenshot" /></div>
+                    <div className="px-10 pt-10"><img src={screenshot6} alt="screenshot" /></div>
 
                 </Carousel>
 
-                <div className="card-body items-center text-center">
+                <div className="card-body items-center  text-secondary text-center">
                     <h2 className="card-title text-4xl">{name}</h2>
 
                     <p className='text-left text-2xl font-semibold'>Key Feature:</p>
                     <ul className='text-left list-disc px-7 pb-5'>
-                        <li>{feature1}</li>
-                        <li>{feature2}</li>
-                        <li>{feature3}</li>
-                        <li>{feature4}</li>
-                        <li>{feature5}</li>
-                        <li>{feature6}</li>
+                        {feature1 && <li>{feature1}</li>}
+                        {feature2 && <li>{feature2}</li>}
+                        {feature3 && <li>{feature3}</li>}
+                        {feature4 && <li>{feature4}</li>}
+                        {feature5 && <li>{feature5}</li>}
+                        {feature6 && <li>{feature6}</li>}
                     </ul>
 
                     <div className='flex flex-col md:flex-row gap-3 mt-5'>

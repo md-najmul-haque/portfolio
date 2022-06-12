@@ -9,7 +9,7 @@ const ProgressBar = ({ skill }) => {
         height: 12,
         width: '100%',
         backgroundColor: "#e0e0de",
-        borderRadius: 5,
+        borderRadius: 2,
         marginBottom: 20
     }
 
