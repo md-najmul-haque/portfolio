@@ -18,7 +18,7 @@ const Banner = () => {
                     <h2 className="text-4xl font-bold my-5">
                         <Typewriter
                             options={{
-                                strings: ['I am a Tech Lover', 'I am a Programmer', 'I am a MERN Stack Developer'],
+                                strings: ['I am a Tech Lover', 'I am a Programmer', 'I am a web Developer'],
                                 autoStart: true,
                                 loop: true,
                             }}
