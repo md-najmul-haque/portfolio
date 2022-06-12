@@ -14,11 +14,11 @@ const Banner = () => {
 
                 <div className='flex-1 w-full'>
                     <h3 className="text-2xl font-semibold">Hi, I am</h3>
-                    <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent my-5">Md Najmul Haque</h1>
-                    <h2 className="text-4xl font-bold my-5">
+                    <h1 className="text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent my-5">Md Najmul Haque</h1>
+                    <h2 className="text-3xl lg:text-4xl font-bold my-5">
                         <Typewriter
                             options={{
-                                strings: ['I am a Tech Lover', 'I am a Programmer', 'I am a web Developer'],
+                                strings: ['I am a Tech Lover', 'I am a Programmer', 'I am a Web Developer'],
                                 autoStart: true,
                                 loop: true,
                             }}

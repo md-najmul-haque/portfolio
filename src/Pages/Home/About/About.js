@@ -4,7 +4,7 @@ import coding1 from '../../../assets/banner/coding1.png'
 const About = () => {
     return (
         <div id='about'>
-            <h1 className='text-5xl text-center font-bold '><span className='text-white'>About</span><span className='text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent'> Me</span></h1>
+            <h1 className='text-4xl lg:text-5xl text-center font-bold '><span className='text-white'>About</span><span className='text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent'> Me</span></h1>
             <div className="hero min-h-fit text-white">
                 <div className="hero-content flex-col lg:flex-row my-20">
                     <div data-aos="fade-right" data-aos-duration="1500" className='flex-1'>

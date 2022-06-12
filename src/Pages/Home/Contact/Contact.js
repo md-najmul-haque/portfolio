@@ -28,7 +28,7 @@ const Contact = () => {
     return (
 
         <div id='contact'>
-            <h2 className="text-5xl text-center font-bold mb-7"><span className='text-white'>Get in</span> <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent'>Touch</span></h2>
+            <h2 className="text-4xl lg:text-5xl text-center font-bold mb-7"><span className='text-white'>Get in</span> <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent'>Touch</span></h2>
 
             <div className="flex flex-col lg:flex-row jus items-center min-h-fit text-white" >
                 <div data-aos="zoom-in-right" data-aos-duration="1500" className="flex-1 card w-96 text-primary-content">
