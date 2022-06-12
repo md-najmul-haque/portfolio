@@ -9,8 +9,8 @@ const Project = ({ project }) => {
                 <img src={img} alt="Shoes" />
             </figure>
             <div className="card-body items-center text-center">
-                <h2 className="card-title">{name}</h2>
-                <p>{description}</p>
+                <h2 className="card-title text-2xl text-secondary">{name}</h2>
+                <p className='text-secondary'>{description}</p>
 
                 <div className='mt-5'>
                     <Link className="btn btn-primary text-black ml-3" to={`/projects/${_id}`}>Explore Details</Link>
