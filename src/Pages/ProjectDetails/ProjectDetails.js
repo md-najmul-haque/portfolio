@@ -36,7 +36,7 @@ const ProjectDetails = (props) => {
     return (
         <div className=''>
 
-            <h1 className='text-2xl md:text-5xl text-center text-white font-semibold my-5'>{name} Projects Details</h1>
+            <h1 className='text-2xl md:text-5xl text-center text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent font-semibold my-5'>{name} Projects Details</h1>
 
             <div className="card w-full md:w-7/12 bg-base-100 shadow-2xl mx-auto">
                 <Carousel

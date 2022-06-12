@@ -13,8 +13,8 @@ const Project = ({ project }) => {
                 <p>{description}</p>
 
                 <div className='mt-5'>
-                    <Link className="btn btn-primary ml-3" to={`/projects/${_id}`}>Explore Detail</Link>
-                    <a className="btn btn-primary ml-3" href={liveLink} rel="noreferrer" role='button' target='_blank'>Live Site</a>
+                    <Link className="btn btn-primary text-black ml-3" to={`/projects/${_id}`}>Explore Details</Link>
+                    <a className="btn btn-primary text-black ml-3" href={liveLink} rel="noreferrer" role='button' target='_blank'>Live Site</a>
                 </div>
 
             </div>

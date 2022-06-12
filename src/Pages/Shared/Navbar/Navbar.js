@@ -13,7 +13,7 @@ const Navbar = () => {
         <li><HashLink to="/home#projects">Projects</HashLink></li>
         <li><HashLink to="/blogs">Blogs</HashLink></li>
         <li><HashLink to="/home#contact">Contact</HashLink></li>
-        <a className="btn btn-primary text-white ml-3" href={resumeOfNajmul} download role='button'>Download Resume</a>
+        <a className="btn btn-outline btn-primary text-white ml-3" href={resumeOfNajmul} download role='button'>Download Resume</a>
 
     </>
 
@@ -28,7 +28,7 @@ const Navbar = () => {
                         {menuItem}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost normal-case text-xl text-white">Najmul Haque</Link>
+                <Link to='/' className="btn btn-ghost normal-case text-xl text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Najmul Haque</Link>
             </div>
             <div className="navbar-end hidden lg:flex text-white">
                 <ul className="menu menu-horizontal p-0">

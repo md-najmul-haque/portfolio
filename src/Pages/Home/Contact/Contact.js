@@ -28,36 +28,36 @@ const Contact = () => {
     return (
 
         <div id='contact'>
-            <h2 className="text-5xl text-center font-bold"><span className='text-white'>Get in</span> <span className='text-red-700'>Touch</span></h2>
+            <h2 className="text-5xl text-center font-bold"><span className='text-white'>Get in</span> <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent'>Touch</span></h2>
 
             <div className="flex flex-col lg:flex-row jus items-center min-h-fit text-white" >
                 <div data-aos="zoom-in-right" data-aos-duration="1500" className="flex-1 card w-96 text-primary-content">
-                    <div className="card-body pt-0">
-                        <div className='flex items-center bg-primary p-5 rounded-xl '>
-                            <div className='text-5xl mr-3'>
+                    <div className="card-body  pt-0">
+                        <div className='flex items-center bg-white  p-5 rounded-xl '>
+                            <div className='text-5xl text-primary mr-3'>
                                 <FontAwesomeIcon icon={faSquarePhone} />
                             </div>
-                            <div>
+                            <div className='text-secondary'>
                                 <h2 className="card-title text-2xl">Phone</h2>
                                 <p className="font-bold" >+8801717888789</p>
                             </div>
                         </div>
 
-                        <div className='flex items-center bg-info p-5 my-2 rounded-xl '>
-                            <div className='text-5xl mr-3'>
+                        <div className='flex items-center bg-white p-5 my-2 rounded-xl '>
+                            <div className='text-5xl text-primary mr-3'>
                                 <FontAwesomeIcon icon={faEnvelope} />
                             </div>
-                            <div>
+                            <div className='text-secondary'>
                                 <h2 className="card-title text-2xl">Email</h2>
                                 <p className="font-bold" >najmulhaque008@gmail.com</p>
                             </div>
                         </div>
 
-                        <div className='flex items-center bg-accent p-5 rounded-xl'>
-                            <div className='text-5xl mr-3'>
+                        <div className='flex items-center bg-white p-5 rounded-xl'>
+                            <div className='text-5xl text-primary mr-3'>
                                 <FontAwesomeIcon icon={faLocationDot} />
                             </div>
-                            <div>
+                            <div className='text-secondary'>
                                 <h2 className="card-title text-2xl">Location</h2>
                                 <p className="font-bold" >Dhaka, Bangladesh</p>
                             </div>
@@ -74,14 +74,14 @@ const Contact = () => {
                             <input
                                 type="text"
                                 placeholder="Enter Your Name"
-                                className="input input-bordered w-full max-w-xs mb-3"
+                                className="input caret-black input-bordered w-full max-w-xs mb-3"
                                 {...register("name")} />
 
 
                             <input
                                 type="text"
                                 placeholder="Enter Your Email"
-                                className="input input-bordered w-full lg:ml-7 mb-3 max-w-xs"
+                                className="input caret-black input-bordered w-full lg:ml-7 mb-3 max-w-xs"
                                 {...register("email", {
                                     required: {
                                         value: true,
@@ -99,14 +99,14 @@ const Contact = () => {
                         <input
                             type="text"
                             placeholder="Please white subject here"
-                            className="input input-bordered w-full max-w-xs lg:max-w-2xl  mb-2"
+                            className="input input-bordered caret-black w-full max-w-xs lg:max-w-2xl  mb-2"
                             {...register("subject")} />
 
 
                         <input
                             type="textarea"
                             placeholder="Leave Your message here"
-                            className="input input-bordered w-full h-36 max-w-xs lg:max-w-2xl my-3"
+                            className="input caret-black input-bordered w-full h-36 max-w-xs lg:max-w-2xl my-3"
                             {...register("message", {
                                 required: {
                                     value: true,
@@ -120,7 +120,7 @@ const Contact = () => {
 
 
                         <div className='flex justify-center'>
-                            <button type="submit" className="btn max-w-xs btn-primary">Send Mail</button>
+                            <button type="submit" className="btn max-w-xs btn-outline btn-primary">Send Message</button>
                         </div>
 
 
