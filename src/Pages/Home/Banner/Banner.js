@@ -1,5 +1,4 @@
 import React from 'react';
-import coding from '../../../assets/banner/coding.png'
 import najmul from '../../../assets/banner/najmul.png'
 import resumeOfNajmul from '../../../assets/resume/resumeOfNajmul.pdf'
 import Typewriter from 'typewriter-effect';
@@ -8,12 +7,12 @@ import Typewriter from 'typewriter-effect';
 const Banner = () => {
     return (
         <div data-aos="fade-up" data-aos-duration="1500" className="hero min-h-screen text-white">
-            <div className="hero-content flex-col lg:flex-row-reverse">
+            <div className="hero-content flex-col lg:flex-row-reverse items-center">
                 <div className='flex-1 w-full'>
                     <img src={najmul} alt='' />
                 </div>
 
-                <div className='flex-1 w-full'>
+                <div className='flex-1 w-full pl-2'>
                     <h3 className="text-2xl font-semibold">Hi, I am</h3>
                     <h1 className="text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent my-5">Md Najmul Haque</h1>
                     <h2 className="text-3xl lg:text-4xl font-bold my-5">
