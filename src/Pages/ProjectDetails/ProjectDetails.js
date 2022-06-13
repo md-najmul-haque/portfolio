@@ -14,7 +14,7 @@ const ProjectDetails = (props) => {
             .then(data => setProject(data))
     }, [])
 
-    const { _id, name, img, screenshot1, screenshot2, screenshot3, screenshot4, screenshot5, screenshot6, clientRepo, serverRepo, liveLink, feature1, feature2, feature3, feature4, feature5, feature6 } = project
+    const { name, screenshot1, screenshot2, screenshot3, screenshot4, screenshot5, screenshot6, clientRepo, serverRepo, liveLink, feature1, feature2, feature3, feature4, feature5, feature6 } = project
 
     const responsive = {
         desktop: {
