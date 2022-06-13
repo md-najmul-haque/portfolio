@@ -28,7 +28,7 @@ const Navbar = () => {
                         {menuItem}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost normal-case text-xl text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Najmul Haque</Link>
+                <Link to='/' className="btn btn-ghost normal-case text-xl text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Najmul</Link>
             </div>
             <div className="navbar-end hidden lg:flex text-white">
                 <ul className="menu menu-horizontal p-0">

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { BsGithub, BsEyeFill } from 'react-icons/bs';
 
 const ProjectDetails = (props) => {
     const [project, setProject] = useState([])
@@ -81,9 +82,9 @@ const ProjectDetails = (props) => {
                     </ul>
 
                     <div className='flex flex-col md:flex-row gap-3 mt-5'>
-                        <a className="btn btn-primary" href={clientRepo} rel="noreferrer" role='button' target='_blank'>GitHub Client Side Code</a>
-                        <a className="btn btn-primary ml-3" href={serverRepo} rel="noreferrer" role='button' target='_blank'>GitHub Client Side Code</a>
-                        <a className="btn btn-primary ml-3" href={liveLink} rel="noreferrer" role='button' target='_blank'>Live Site</a>
+                        <a className="btn btn-secondary btn-outline" href={clientRepo} rel="noreferrer" role='button' target='_blank'> <BsGithub /> <span className='ml-2'>Client Side Repository </span></a>
+                        <a className="btn btn-secondary btn-outline ml-3" href={serverRepo} rel="noreferrer" role='button' target='_blank'><BsGithub /> <span className='ml-2'>GitHub Client Repository</span> </a>
+                        <a className="btn btn-secondary btn-outline ml-3" href={liveLink} rel="noreferrer" role='button' target='_blank'><BsEyeFill /> <span className='ml-2'>Live Site</span></a>
                     </div>
 
                 </div>
