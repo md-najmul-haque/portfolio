@@ -23,7 +23,6 @@ const ProjectDetail = (props) => {
         }
     };
 
-
     return (
         <div>
             <h1 className='text-2xl md:text-5xl text-center text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent font-semibold my-5'>{name} Projects Details</h1>
