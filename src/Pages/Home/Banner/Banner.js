@@ -12,7 +12,7 @@ const Banner = () => {
                     <img src={najmul} alt='' />
                 </div>
 
-                <div className='flex-1 w-full pl-2'>
+                <div className='flex-1 w-full pl-2 lg:pl-0'>
                     <h3 className="text-2xl font-semibold">Hi, I am</h3>
                     <h1 className="text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent my-5">Md Najmul Haque</h1>
                     <h2 className="text-3xl lg:text-4xl font-bold my-5">

@@ -5,7 +5,7 @@ const Projects = () => {
     const [projects, setProjects] = useState([])
 
     useEffect(() => {
-        fetch(`https://shielded-cliffs-70398.herokuapp.com/projects`)
+        fetch(`projects.json`)
             .then(res => res.json())
             .then(data => setProjects(data))
     }, [])
@@ -17,7 +17,7 @@ const Projects = () => {
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
-                    projects.map(project => <Project key={project._id} project={project}></Project>)
+                    projects.map(project => <Project key={project.id} project={project}></Project>)
                 }
             </div>
         </div>

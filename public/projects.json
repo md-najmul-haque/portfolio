@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Gardening Plus",
     "description": "Designed to place an order, manage an order, make payment, update profile data and give a review for a customer. Here also have nice dashboard with user and admin panel.",
     "img": "https://i.ibb.co/XzVBff9/gardening-Plus.png",
@@ -20,6 +21,7 @@
     "feature6": "Anyone can update their profile information from my profile section in the database."
   },
   {
+    "id": 2,
     "name": "NextGen Bike",
     "description": "Designed to inventory products like add product, stock update, delete a product, etc. If any product is added or updated status then it will automatically update to the home page.",
     "img": "https://i.ibb.co/ZYhrZ4N/nextgen-Bike.png",
@@ -40,6 +42,7 @@
     "feature6": "Also add banner, product feature and contact us section."
   },
   {
+    "id": 3,
     "name": "Zenith estates",
     "description": "Developed firebase login system here. Also, add Facebook and Google login system. Designed to sell apartments.",
     "img": "https://i.ibb.co/NtYGkK6/Zenith-Estates.png",
