@@ -3,7 +3,6 @@ import najmul from '../../../assets/banner/najmul.png'
 import resumeOfNajmul from '../../../assets/resume/resumeOfNajmul.pdf'
 import Typewriter from 'typewriter-effect';
 
-
 const Banner = () => {
 
     return (

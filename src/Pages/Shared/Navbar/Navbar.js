@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import resumeOfNajmul from '../../../assets/resume/resumeOfNajmul.pdf'
 
-
 const Navbar = () => {
 
     const menuItem = <>
