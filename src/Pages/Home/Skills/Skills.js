@@ -5,17 +5,25 @@ const Skills = () => {
 
     const skills = [
         { id: 1, title: 'JavaScript', bgcolor: "#3ABFF8", completed: 85 },
-        { id: 2, title: 'React', bgcolor: "#3ABFF8", completed: 87 },
-        { id: 3, title: 'Node.js', bgcolor: "#3ABFF8", completed: 70 },
-        { id: 4, title: 'MongoDB', bgcolor: "#3ABFF8", completed: 70 },
-        { id: 5, title: 'HTML', bgcolor: "#3ABFF8", completed: 92 },
-        { id: 6, title: 'CSS', bgcolor: "#3ABFF8", completed: 87 },
-        { id: 7, title: 'Bootstrap', bgcolor: "#3ABFF8", completed: 90 },
-        { id: 8, title: 'Tailwind CSS', bgcolor: "#3ABFF8", completed: 90 },
-        { id: 9, title: 'Express.js', bgcolor: "#3ABFF8", completed: 65 },
-        { id: 10, title: 'Firebase', bgcolor: "#3ABFF8", completed: 85 },
-        { id: 11, title: 'TypeScript', bgcolor: "#3ABFF8", completed: 56 },
-        { id: 12, title: 'Git', bgcolor: "#3ABFF8", completed: 77 },
+        { id: 2, title: 'Typescript', bgcolor: "#3ABFF8", completed: 80 },
+        { id: 3, title: 'React', bgcolor: "#3ABFF8", completed: 90 },
+        { id: 4, title: 'React Testing', bgcolor: "#3ABFF8", completed: 75 },
+        { id: 5, title: 'Next.js', bgcolor: "#3ABFF8", completed: 75 },
+        { id: 6, title: 'Redux', bgcolor: "#3ABFF8", completed: 65 },
+        { id: 7, title: 'Redux Toolkit', bgcolor: "#3ABFF8", completed: 65 },
+        { id: 8, title: 'Node.js', bgcolor: "#3ABFF8", completed: 85 },
+        { id: 9, title: 'Express.js', bgcolor: "#3ABFF8", completed: 85 },
+        { id: 10, title: 'Mongoose', bgcolor: "#3ABFF8", completed: 90 },
+        { id: 11, title: 'MongoDB', bgcolor: "#3ABFF8", completed: 85 },
+        { id: 12, title: 'HTML', bgcolor: "#3ABFF8", completed: 90 },
+        { id: 13, title: 'CSS', bgcolor: "#3ABFF8", completed: 90 },
+        { id: 14, title: 'SCSS', bgcolor: "#3ABFF8", completed: 90 },
+        { id: 15, title: 'Bootstrap', bgcolor: "#3ABFF8", completed: 90 },
+        { id: 16, title: 'Tailwind CSS', bgcolor: "#3ABFF8", completed: 90 },
+        { id: 17, title: 'Ant Design', bgcolor: "#3ABFF8", completed: 70 },
+        { id: 18, title: 'Material UI', bgcolor: "#3ABFF8", completed: 70 },
+        { id: 19, title: 'Firebase', bgcolor: "#3ABFF8", completed: 85 },
+        { id: 20, title: 'Git', bgcolor: "#3ABFF8", completed: 85 }
     ];
 
 
