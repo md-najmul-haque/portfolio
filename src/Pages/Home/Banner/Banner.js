@@ -1,6 +1,6 @@
 import React from 'react';
 import najmul from '../../../assets/banner/najmul.png'
-import resumeOfNajmul from '../../../assets/resume/resumeOfNajmul.pdf'
+import resume from '../../../assets/resume/ResumeOfNajmulHaque.pdf'
 import Typewriter from 'typewriter-effect';
 
 const Banner = () => {
@@ -27,7 +27,7 @@ const Banner = () => {
                         </h2>
                         <div className='mt-16'>
                             <a className="btn btn-outline btn-primary" href="#contact" role='button'>Hire Me</a>
-                            <a className="btn btn-outline btn-primary ml-3" href={resumeOfNajmul} download role='button'>Download Resume</a>
+                            <a className="btn btn-outline btn-primary ml-3" href={resume} download role='button'>Download Resume</a>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import resumeOfNajmul from '../../../assets/resume/resumeOfNajmul.pdf'
+import resume from '../../../assets/resume/ResumeOfNajmulHaque.pdf'
 
 const Navbar = () => {
 
@@ -12,7 +12,7 @@ const Navbar = () => {
         <li><HashLink to="/home#projects">Projects</HashLink></li>
         <li><HashLink to="/blogs">Blogs</HashLink></li>
         <li><HashLink to="/home#contact">Contact</HashLink></li>
-        <a className="btn btn-outline btn-primary text-white ml-3" href={resumeOfNajmul} download role='button'>Download Resume</a>
+        <a className="btn btn-outline btn-primary text-white ml-3" href={resume} download role='button'>Download Resume</a>
 
     </>
 
