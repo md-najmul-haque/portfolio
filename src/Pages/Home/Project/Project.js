@@ -7,7 +7,7 @@ const Project = ({ project }) => {
     return (
         <div data-aos="zoom-in-up" data-aos-duration="1500" className="card w-96 bg-base-100 shadow-xl hover:shadow-primary mx-auto">
             <figure className="px-10 pt-10">
-                <img src={img} alt="Shoes" />
+                <img src={img} alt="website-img" />
             </figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title text-2xl text-secondary">{name}</h2>
