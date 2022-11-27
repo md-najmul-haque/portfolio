@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "itracker",
-    "description": "This is mainly a group project about issue tracking systems and during this project, I was a team leader. In this project, I have implemented navbar, hero section, authentication.I have also completed project, my task, meeting route etc",
+    "description": "This is mainly a group project about issue tracking systems and during this project, I was a team leader. In this project, I have implemented the navbar, hero section, and authentication. I have also completed the project, my task, the meeting route, etc.",
     "img": "https://i.ibb.co/xqMLkbm/itracker.png",
     "screenshot1": "https://i.ibb.co/zZBXt3M/1.png",
     "screenshot2": "https://i.ibb.co/TMsf4Vg/2.png",
@@ -13,12 +13,12 @@
     "liveLink": "https://itracker-d0330.web.app/",
     "clientRepo": "https://github.com/md-najmul-haque/itracker",
     "serverRepo": "https://github.com/md-najmul-haque/itracker-server",
-    "feature1": "Designed to track issues. This is mainly issue tracking website.",
-    "feature2": "In project route, anyone can create projects and they can also do all necessary task like add issue, assign team member, track issue, update issue etc.",
-    "feature3": "",
-    "feature4": "In my task route, anyone can see all task assign for him/her. He/She can also update his/her task from my task route.",
-    "feature5": "In meeting route, anyone can create new meeting, can also update and delete the meeting schedule.",
-    "feature6": "Implemented the full authentication system and make the full website responsive"
+    "feature1": "Designed to track issues. This is mainly an issue tracking the website.",
+    "feature2": "In the project route, anyone can create projects and they can also do all necessary tasks like add issues, assign team members, track issues, update issues, etc.",
+    "feature3": "In my task route, anyone can see all tasks assigned to him/her. He/She can also update his/her task from my task route.",
+    "feature4": "In the meeting route, anyone can create a new meeting, also update and delete the meeting schedule.",
+    "feature5": "Implemented the full authentication system and make the full website responsive",
+    "feature6": ""
   },
   {
     "id": 2,
