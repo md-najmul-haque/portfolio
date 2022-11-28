@@ -71,7 +71,7 @@ const ProjectDetail = (props) => {
 
                     <div className='flex flex-col md:flex-row gap-3 mt-5'>
                         <a className="btn btn-secondary btn-outline" href={clientRepo} rel="noreferrer" role='button' target='_blank'> <BsGithub /> <span className='ml-2'>Client Side Repository </span></a>
-                        <a className="btn btn-secondary btn-outline ml-3" href={serverRepo} rel="noreferrer" role='button' target='_blank'><BsGithub /> <span className='ml-2'>GitHub Client Repository</span> </a>
+                        {serverRepo ? <a className="btn btn-secondary btn-outline ml-3" href={serverRepo} rel="noreferrer" role='button' target='_blank'><BsGithub /> <span className='ml-2'>Server Side Repository</span> </a> : ''}
                         <a className="btn btn-secondary btn-outline ml-3" href={liveLink} rel="noreferrer" role='button' target='_blank'><BsEyeFill /> <span className='ml-2'>Live Site</span></a>
                     </div>
 
